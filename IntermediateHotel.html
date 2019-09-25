@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<div id=button>
+		
+	</div>
+<script type="text/javascript" charset="utf-8" async defer>
+	
+function HotelConstructor(name, available_nights, nights) {
+var nights = prompt("Plese enter the number of nights")
+console.log(nights)
+this.name = name;
+this.available_nights = Math.floor(Math.random()*9);
+this.nights = nights;
+this.checkAvailability = function() {
+if (nights<=available_nights) {
+	document.getElementById('button').innerHTML = "<button>'I'/ll reserve'</button>";
+}
+else {alert("Sorry, no free room for " + nights + " nights")
+}
+}
+};
+
+
+var hiltonHotel = new HotelConstructor('Hilton');
+var mariottHotel = new HotelConstructor('Marriott');
+var holidayInnHotel = new HotelConstructor('Holiday Inn'); 
+
+console.log(hiltonHotel.name);
+console.log(hiltonHotel.available_nights)
+console.log(Hotel.available_nights)
+
+
+</script>
+</body>
+
+
+</html>
