@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<body>
+
+
+
+
+
+<script type="text/javascript">
+	
+
+/*Hi I am John Doe I am 25 years old and I am a future programmer. */
+
+
+function yourLife() {
+
+       var name = prompt("Your first name:")
+       var surname = prompt("Your last name:")
+       var age = prompt("Your age:")
+       var profession = prompt("Your profession:")
+
+       this.name = name;
+       this.surname = surname;
+       this.age = age;
+       this.profession = profession;
+
+       this.tellYourLife = function() {
+       document.write("Hi my name is " + this.name + " " + this.surname + ", I am " + this.age + "years old" + " and I am a " + this.profession + ".");
+
+       }
+}
+var me = new yourLife();
+me.tellYourLife();
+
+
+</script>
+
+</body>
+</html>
