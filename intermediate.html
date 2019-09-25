@@ -6,12 +6,46 @@
 
 <body>
 
+	<div> 
+
+
+			<p id="message"></p>
+	
+	</div>
+
 
 
 
 
 <script type="text/javascript">
-	
+
+
+
+function hotelConstruct() {
+
+       var night = Number(prompt("How many nights you'd like to spend?:"));
+     
+     // console.log(night);
+     // this.name = name;
+     // this.room = room;
+       
+       this.available = Math.floor(Math.random()*10)+1;
+
+       this.reserveOrNot = function() {
+       	if (night < this.available) {
+       		document.getElementById('message').innerHTML = "Please reserve!" + "<input type=\"submit\">";
+       		
+       	} else {
+       		document.getElementById('message').innerHTML = "Sorry, no more available rooms for " + night + " nights";
+       		 	console.log(this.available);
+       	}
+       	}
+
+}
+
+var hilton = new hotelConstruct();
+hilton.reserveOrNot();
+
 
 </script>
 
