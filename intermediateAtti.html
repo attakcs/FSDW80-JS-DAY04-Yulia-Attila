@@ -13,15 +13,11 @@
 	
 	</div>
 
-
-
-
-
 <script type="text/javascript">
 
 
 
-function hotelConstruct() {
+function hotelConstruct(name) {
 
        var night = Number(prompt("How many nights you'd like to spend?:"));
      
@@ -37,7 +33,7 @@ function hotelConstruct() {
        		
        	} else {
        		document.getElementById('message').innerHTML = "Sorry, no more available rooms for " + night + " nights";
-       		 	console.log(this.available);
+       		 //	console.log(this.available);
        	}
        	}
 
