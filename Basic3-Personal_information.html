@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/javascript" charset="utf-8" async defer>
+	
+function personalInformation () { 
+
+name = "John";
+surname = "Doe";
+age = "25";
+
+this.name = name
+this.surname = surname
+this.age = age
+
+this.givePersonalInformation = function() {
+document.write("I am " + this.name + this.surname + " I am " + this.age + "years old" + "and I am future programmer");
+};
+}
+
+var me = new personalInformation
+me.givePersonalInformation();
+
+</script>
+</body>
+
+
+</html>
